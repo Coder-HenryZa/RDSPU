@@ -162,7 +162,7 @@ if __name__ == '__main__':
     set_seed(args.seed)
     datasetname = "Twitter15"  # Twitter15 Twitter16
     device = th.device('cuda:0' if th.cuda.is_available() else 'cpu')
-    test_set, train_set = loadSplitData(datasetname,fold=0)
+    test_set, train_set = loadSplitData(datasetname)
     treeDic = loadTree(datasetname)
     train_losses, val_losses, train_accs, val_accs = run_model(treeDic, test_set, train_set, args.droprate, args.lr,
                                                                args.weight_decay, args.patience, args.n_epochs,
