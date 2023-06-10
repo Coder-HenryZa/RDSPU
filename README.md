@@ -1,6 +1,6 @@
-### Source code for the ICASSP 2023 paper "RUMOR DETECTION VIA ASSESSING THE SPREADING PROPENSITY OF USERS"
+## Source code for the ICASSP 2023 paper "RUMOR DETECTION VIA ASSESSING THE SPREADING PROPENSITY OF USERS"
 
-#### Requirements
+### Requirements
 
 Code developed and tested in Python 3.9 using PyTorch 1.10.2 and Torch-geometric 2.2.0. Please refer to their official websites for installation and setup.
 
@@ -35,7 +35,7 @@ urllib3==2.0.2
 zipp==3.15.0
 ```
 
-#### Datasets
+### Datasets
 
 Data of Twitter15 and Twitter16 social interaction graphs follows this paper:
 
@@ -45,7 +45,7 @@ The raw datasets can be respectively downloaded from https://www.dropbox.com/s/7
 
 The historical tweet data was crawled by the Twitter Developer tool in about January 2022, before the strict crawling restrictions were in place.  The tool's URL is https://developer.twitter.com/en.
 
-#### Run
+### Run
 
 ```
 # Data pre-processing
@@ -57,7 +57,7 @@ python ./networks/getTwitterTokenize.py Twitter16
 python RDSPU_Run.py
 ```
 
-#### Citation
+### Citation
 
 If you find this repository useful, please kindly consider citing the following paper:
 
